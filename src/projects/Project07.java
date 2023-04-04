@@ -48,6 +48,8 @@ public class Project07 {
     }
 
     public static boolean validateEmailAddress(String str){
+        //format   <2+chars>         @          <2+chars>         .         <2+chars>
+        //       <hasEmailName> <notMoreAt>  <hasAddressName>  <hasDot> <hasCharsAfterDot>
         boolean hasEmailName = false, notMoreAt = false, hasAddressName = false, hasCharsAfterDot = false, hasDot = false;
         int countAt = 0, countDot = 0;
         if(1 < str.substring(0, str.indexOf('@')).length()) hasEmailName = true;
