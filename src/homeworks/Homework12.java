@@ -1,5 +1,8 @@
 package homeworks;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Homework12 {
     public static void main(String[] args) {
         System.out.println("\n ===== TASK 1 ===== \n");
@@ -13,6 +16,7 @@ public class Homework12 {
         System.out.println("\n ===== TASK 5 ===== \n");
         System.out.println(middleInt(-1, 25, 10));
         System.out.println("\n ===== TASK 6 ===== \n");
+        System.out.println(Arrays.toString(new int[] {13, 2, 3}));
 
     }
 
@@ -88,6 +92,15 @@ public class Homework12 {
      */
 
     public static int[] no13(int[] arr){
-
+        ArrayList<Integer> no13List = new ArrayList<>(arr.length);
+        for(int element : arr){
+            if(element == 13) no13List.add(0);
+            else no13List.add(element);
+        }
+        int[] no13Arr = new int[no13List.size()];
+        for (int i = 0; i < no13List.size(); i++) {
+            no13Arr[i] = no13List.get(i);
+        }
+        return no13Arr;
     }
 }
