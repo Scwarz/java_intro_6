@@ -1,0 +1,33 @@
+02-07-2023 Math Class
+
+Math Class is a class that allows us to do different math examples in our program
+
+Methods:
+1. max():
+	- Syntax: Math.max(int x, int y);
+	- Finds the max of the given numbers
+	- max() takes 2 aruguments as int and returns one single int
+
+2. min():
+	- Syntax: Math.min(int x, int y);
+	- Finds the min of the given numbers
+	- min() takes 2 aruguments as int and returns one single int
+
+3. abs():
+	- Syntax: Math.abs(int/double x);
+	- Takes 1 int as a argument and returns the 1 int as a positive number
+
+4. sqrt():
+	- Syntax: Math.sqrt(double d);
+	- sqrt() is a method that takes a double as an argument and returns that numbers with its square root.
+
+5. round():
+	-Syntax: Math.round(double d);
+	-round() is a method that takes a double as an argument and retruns that number rounded
+	- 25.6 -> 26
+	- 5.4  -> 5
+6. random()
+	- Syntax: Math.random();
+	- random does not take any arguments
+	- random() is a method to generate random numebrs for 0.0 to 1.0 where 1 is not included
+	- we can add or multiply to this number to change the range

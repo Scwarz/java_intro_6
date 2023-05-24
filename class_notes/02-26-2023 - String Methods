@@ -1,0 +1,27 @@
+02-26-2023 - String Methods
+
+String methods:
+
+1. Trim() - removes all extra spaces from the string
+
+2. substring() - returns the string at a given starting point to ending point
+
+3. startWith()- returns true or false depending if the string starts with the given argument
+
+4. endWith() - returns true or false depending if the string ends with the given argument
+
+5. contains() - returns true or false depending if the string contains the given argument
+
+6. replace() - returns the string with replacment characters.
+
+7. isEmpty() - returns true or false depending on if the string is "";
+
+Mehtod chaining
+ - We can use many methods in a single line by chaining them
+ - We can onlu chain a method if the lest method is returning a string
+
+
+
+
+
+

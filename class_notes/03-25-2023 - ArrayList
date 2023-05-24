@@ -1,0 +1,94 @@
+
+
+
+03-25-2023 - ArrayList
+
+Arrays: 
++it is a collection used to store multiple data
++It allows us to manipulate the date inside it
++Allows duplicates
++it can used both with primitives and reference types
+
+-fixed-sized, and you cannot add/remove elements
+
+
+NOTE: Only arrays can work with primitives while all other collections works only with reference types
+
+Arrays vs ArrayList
+-ArrayList can be considered as dynamic sized arrays
+-both of them collections and used to store multiple similar data.
+-both allows null elements.
+-both allows duplicates.
+-Arrays are fixed-sized while we can modify ArrayLists by adding or removing elements.
+-Arrays can store both primitives and object while ArrayList can only store objects.
+-Arrays does not provide many useful methods to update, retrieve elements (instead we use [index]). On the other hand, ArrayList provides many useful methods to get, delete, update, add, etc elements.
+
+
+ARRAYLIST METHODS
+-Individual element manipulation
+-Group of element manipulation
+	addAll(), removeAll(), containsAll(), retainAll()
+
+list contains "Jane", "Jasmine", "John"
+
+
+ARRAYLIST SNYTAX:
+ArrayList<dataType> varName = new ArrayList<>();
+List<dataType> varName = new ArrayList<>();
+
+
+JAVA COLLECTION FRAMEWORK
+	
+	LIST
+		-ArrayList
+		-LinkedList
+		-Vector
+
+	SET
+		-HashSet
+		-LinkedHashSet
+		-TreeSet 		-> sorts element by default
+
+	MAP
+		-HashMap
+		-LinkedHashMap
+		-TreeMap
+		-Hashtable
+
+
+
+byte, short, int, long, float, double, char, boolean
+Byte, Short, Integer, Long, Float, Double, Character, Boolean
+
+
+
+String name = "John";
+
+name.indexOf('x'); // -1
+
+
+
+list -> 10, 15, 13, 26, 11, 6, 7, 3, 5, 13, 26, 3
+removeList -> 3, 13, 26
+
+
+Remove all the elements that are equals 3, 13, 26
+
+
+list.removeAll(removeList)
+
+
+
+Keep the elements that 15, 5, and 7 but remove the rest
+
+
+
+
+
+
+
+
+
+
+
+

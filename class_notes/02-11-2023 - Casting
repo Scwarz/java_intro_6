@@ -1,0 +1,192 @@
+
+
+
+02-11-2023 - Casting
+
+
+RECAP:
+
+Scanner Issue: 
+next(), nextInt(), nextDouble()
+input.nextLine();
+
+input.nextLine();
+
+
+Data types:
+	Primitives: byte, short, int, long, float, double, char, boolean
+	Reference types: String, Scanner, Math, System
+				Byte, Short, Integer, Long, Float, Double, Boolean, Character
+
+
+
+Math class:
+min(a, b) -> returns the min value
+max(a, b) -> retutns the max value
+abs(2-5)  -> 3
+
+
+random()	-> returns a value between 0.0 (inclusive) and 1.0 (exclusive)
+
+
+Math.random() -> 0.832765823
+
+
+get me a random number between 17 53 (both inclusive)
+
+Steps to produce a random number for given range
+1. Find how many numbers in your range: biggest - smallest + 1
+53 - 17 + 1 -> 37
+
+2. Multiply your random result with the number
+(int)(Math.random() * 37) -> 0 and 36 (both inclusive)
+
+
+3. Add smallest number to your result
+(int)(Math.random() * 37) + 17 -> 17 and 53 (both inclusive)
+
+
+
+CASTING:
+It is converting data types into other types
+
+byte 		-> 1 byte
+short 		-> 2 bytes
+int 		-> 4 bytes
+long 		-> 8 bytes
+float 		-> 4 bytes
+double 		-> 8 bytes
+
+
+double > int 		-> explicit casting - narrowing
+int -> double 		-> implicit casting - widening
+
+
+
+
+
+compiler
+execution - runtime
+
+
+char -> 2 bytes
+short -> 2 bytes
+
+
+
+Implicit casting flow
+byte -> short -> char -> int -> long -> float -> double
+		
+Explicit casting flow
+double -> float -> long -> int -> char -> short -> byte
+
+
+boolean is not part of either explicit or implicit casting as it cannot be converted to numbers.
+
+true or false cannot be converted to numbers.
+
+
+'A' -> 65
+' ' -> 32
+
+int -> char 		-> explicit casting
+
+
+
+
+NOTE: String + any data type will return a String
+
+String + data -> String
+String + data + data + data -> String
+
+
+
+
+int number1 = 45, number2 = 50;
+
+String s = "" + number1 + number2;
+
+System.out.println(s); // 4550
+
+
+
+CONVERTION BT String and Primitives
+String to primitives
+Primitives to String
+
+
+String str = "1000";
+
+str + 5; // 1005
+
+
+
+
+"$1,597.06" > 0 //compiler error
+
+"1597.06" > 0 // compiler error
+
+
+Double.parseDouble("1597.06") > 0 // true
+Double.valueOf("1597.06") > 0 // true
+
+
+
+Wrapper classes
+-These are object representation of the primitives
+-For each primitive, we have a Wrapper class
+-Wrapper classes starts with uppercase like all the other java classes
+
+Primitive 		Wrapper class
+byte 			Byte
+short 			Short
+int 			Integer
+long 			Long
+float 			Float
+double 			Double
+char 			Character
+boolean 		Boolean
+
+Primitives are not classes and they don't have any methods to manipulate the data.
+Primitives are used to store a simple piece of data.
+Manipulation: updating, changing, deleting, removing
+
+Wrapper classes can handle anything that it's respective primitive does.
+Wrapper classes provides us some methods that used for data manipulation.
+
+Double.parseDouble(variable) -> this method is used to convert given variable to a double (primitive) - 8 bytes
+
+Double.valueOf(variable) ->this method is used to convert given variable to a Double (object) - more than 8 bytes
+
+
+Integer.parseInt()
+Integer.valueOf()
+
+Integer.MAX_VALUE; // 
+Integer.MIN_VALUE; //
+
+
+
+
+String s = "25.5"; // 
+
+Integer.parseInt(s); // Error: FormatException
+
+
+(int) Double.parseDouble(s); // 25 + 5 => 30
+
+
+
+
+var keyword:
+-It is added to java with Java-10 release
+
+var age = 45; 							-> int
+var name = "John"; 						-> String
+var price = 10.5; 						-> double
+var c1 = 'A'; 							-> char
+var isValid = true; 					-> boolean
+var input = new Scanner(System.in); 	-> Scanner
+
+
+

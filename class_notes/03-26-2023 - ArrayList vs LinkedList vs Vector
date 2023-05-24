@@ -1,0 +1,160 @@
+
+
+
+03-26-2023 - ArrayList vs LinkedList vs Vector
+
+
+Arrays vs ArrayList
+Similarities:
+	-Both are collections used to store multiple data.
+	-Both allows duplicate elements.
+	-Both allows null data when they store objects.
+	-They both imported from java.util package.
+
+
+Differences:
+	-Both can store objects but arrays can also store primitives.
+	-Arrays are fixed-sized while ArrayList is dynamiz and size can be modified by adding.removing the elements.
+	-Arrays provides index to manipulate the data while ArrayList provides methods to get, set, remove, clear, add, change the data.
+
+SYNTAX:
+arrays => 	dataType[] varName = new dataType[capacity];
+			dataType[] varName = {el1,el2, null, el3};
+
+arrayList ->ArrayList<dataType> varName = new ArrayList<>();
+			List<dataType> varName = new ArrayList<>();
+
+
+
+ArrayList methods:
+1. Adding elements
+	-add(Object) -> adds object to the tail
+	-add(index, Object) -> adds object to specified index
+	-addAll(Collection) -> adds one collection to another
+	-addAll(index, Collection) -> adds one collection to another with specified index
+
+
+2. Retrieving elements
+	get(index) -> retrieves element by it's index
+
+3. Updating elements
+	set(index, Object) -> updates the element by the index with the new Object
+
+4. Getting the size
+	size() -> how many elements you have in the list
+
+5. Removing elements
+	-remove(index) -> removes the element by the index
+	-remove(Object) -> removes the given element (first occurrence)
+	-removeAll(Collection) -> removes multiple elements at once
+	-removeIf() -> removes elements that meets the condition
+	-clear() -> removes all the element in the list
+	-retainAll(Collection) -> keeps the collection element and removes the rest from the original list
+
+6. Checking indexes
+	-indexOf(Object) -> the first index found for the element
+	-lastIndexOf(Object) -> the last index found for the element
+
+7. Checking list if it contains some elements
+	-contains(Object) -> checks the list if it contains single element
+	-containsAll(Collection) -> checks the list if it contains multiple elements
+
+8. Check if the list is empty
+	-isEmpty() -> checks if the is empty or not
+
+
+
+HOW TO SORT AN ARRAYLIST?
+-We can use Collections class which comes from java.util package and its sort() method
+
+Syntax:
+Collections.sort(list);
+
+
+
+
+
+HOW TO CONVERT AN ARRAY TO AN AARAYLIST?
+        1. Arrays.asList() method
+        2. Loops - manual way
+        3. Collections.addAll(collection1, collection2); // it will add collection2 into collection1
+
+1. Using asList() method
+
+String[] names = {"Okan", "Sandina", "Sabir"};
+
+ArrayList<String> list = new ArrayList<>(Arrays.asList(names));
+
+
+ArrayList<String> list = new ArrayList<>(Arrays.asList("", "", ""));
+
+//Later versions like 11
+ArrayList<Integer> list = List.of(10, 15, 5, 2, -7);
+
+
+
+ArrayList vs LinkedList vs Vector
+-They are collections and specially List.
+-ArrayList stores element with their indexes and when you add or remove elements, most of the element indexes are updated which makes performance slow.
+-LinkedList stores element with nodes (previous element, next element, index) which makes removing or adding faster because there is no need to update indexes.
+
+NOTE: LinkedList provides us more methods to work around the data compared to ArrayList.
+
+-List is parent of ArrayList, LinkedList and Vector
+-LinkedList has more parents like Queue and Deque and hence it provides more methods.
+
+PERFORMANCE: LinkedList is faster and ArrayList only when it comes to removing or adding elements.
+MEMORY: LinkedList allocates more memory compared to ArrayList.
+
+
+-Vector is synchronized ArrayList. 
+synchronized = thread-safe
+
+When you run multiple threads at the same time, Vector will synchronize them automatically. It will wait for one thread to be done with their operation before the other starts.
+
+
+
+
+ArrayList<dataType> varName = new ArrayList<>();
+List<dataType> varName = new ArrayList<>();
+
+
+LinkedList<dataType> varName = new LinkedList<>();
+List<dataType> varName = new LinkedList<>();
+
+
+Vector<dataType> varName = new Vector<>();
+List<dataType> varName = new Vector<>();
+
+
+
+
+
+
+"Adam", "John", "James"
+
+
+Thread 1 							Thread 2
+add "Jane" -> size 4 				Remove "John" -> size 3
+
+
+
+
+LinkedList Methods
+pop() == removeFirst() -> retrieve and remove the first element in the list
+
+push() == addFirst() == offerFirst() -> add element to the 0th index
+
+offer() == offerLast()  -> add element to the last index
+
+
+
+JAVA STREAM & LAMBDA EXPRESSION
+
+
+for(Integer element : list){
+ if(element.toString().contains("3")) count++;
+}
+
+list.stream().filter(x -> String.valueOf(x).contains("3")).count();
+

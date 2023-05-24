@@ -1,0 +1,55 @@
+
+
+
+01-31-2023 - Variables & String
+
+
+DataType  variableName  = value;
+int age = 25;
+
+Naming rules:
+
+Unwritten rules:
+1. CamelCase
+2. Meaningful name
+3. Variable name should not start with a capital letter
+
+Written Rules:
+1. No Spaces
+2. Digits are allowed except in the beginning of the variable name
+3. _ and $ are allowed to be used anywhere in the Variable name
+
+
+
+
+
+int age;					-> true
+byte AGE;					-> False
+short shift$;				-> True
+byte number of students;	-> False
+char _firstLetter;			-> true
+int 8students;				-> False
+boolean isWheatherSnowing#; -> False
+double @balance;			-> False
+
+
+
+
+
+boolean b1, b2;			->True
+int i1 = 45, i2;		->True
+double d1, double d2;	->False
+byte b1; byte b2;		->True but unorganized
+int i3; i4;				->False
+
+
+
+
+
+
+
+
+
+
+
+

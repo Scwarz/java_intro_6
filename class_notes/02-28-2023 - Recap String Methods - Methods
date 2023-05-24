@@ -1,0 +1,183 @@
+
+
+02-28-2023 - Recap String Methods - Methods 
+
+static or non-static
+
+void or return
+
+String methods
+
+
+
+	String name = "John";
+	System.out.println("Hello " + name);
+
+
+
+1. task of the method -> say Hello to name
+2. find a meaningful name for the method -> helloName, sayHelloToName
+3. Arguments -> name
+4. void method
+
+class A{
+	public void helloName(String name){
+		System.out.println("Hello " + name);
+	}
+}
+
+
+I want to invoke the helloName with class name -> static
+I want to invoke the helloName with the object -> non-static
+
+
+static methods can be invoked with the class name
+non-static methods can be invoked with an object of the class - with an instance of the class
+
+instance = object
+
+A.helloName("Zel"); // You can do this if the method is static
+
+
+When it is non-static: we need an object
+A a = new A(); // object
+a.helloName("Zel"); // Hello Zel
+
+
+
+String name = "yahya"; // this is a String object
+
+dataType variableName = value;
+
+name here is the identifier for the String object created.
+"yahya" is the value assigned to name (String) object
+
+
+name is an object -> 
+methods can be invoked with the name -> non-static
+
+
+If you invoke the method with the ClassName -> static
+If you invoke the method with the object/instance -> non-static
+
+
+
+-Access modifiers: are used to define the accessibility level of class members
+	public 		-> most accessible
+	protected   -> will be discussed
+	default     -> less accessible
+	private     -> least accessible
+-Method is one of the class member
+
+
+Coming back with something in return -> return
+Only doing what needs to be done -> void
+
+
+
+
+String name = "pineapple";
+
+index 	0 1 2 3 4 5 6 7 8
+char    p i n e a p p l e
+
+i 		-> name.charAt(1); // 'i'
+index of p -> name.indexOf('p'); // 0
+last index of p -> name.lastIndexOf('p'); // 6
+
+index of x -> name.indexOf('x'); // -1
+last index of x -> name.lastIndexOf('x'); // -1
+
+index of i -> name.indexOf('i'); // 1
+last index of i -> name.lastIndexOf(i); // 1
+
+index of "pp" -> name.indexOf("pp"); // 5
+index of "app" -> name.indexOf("app"); // 4
+index of "pineapple" -> name.indexOf("pineapple"); // 0
+index of "apple" -> name.indexOf("apple"); // 4
+
+last index of "apple" -> name.lastIndexOf("apple"); // 4
+
+index 	0 1 2 3 4 5 6 7 8
+char    p i n e a p p l e
+
+index of "Hello" -> name.indexOf("Hello"); // -1
+index of "APPLE" -> name.indexOf("APPLE"); // -1
+last index of "elppa" -> name.lastIndexOf("elppa"); // -1
+
+
+
+
+
+
+
+
+
+
+String sentence = "can i can a can";
+c a n i   c a n   a       c  a  n
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+
+index of "can" -> 0
+last index of "can" -> 12
+
+last index of 'n' -> 14
+last index of "n" -> 14
+
+
+
+
+NOTE: indexOf() method always return the first occurrence of the given argument.
+NOTE: lastIndexOf() method always return the last occurrence of the given argument.
+NOTE: indexOf() or lastIndexOf() methods will return -1 if the given argument does not exist in the String object.
+NOTE: indexOf() or lastIndexOf() methods will return the same index of the given argument if it exists only once in the String object.
+
+
+
+
+charAt(index) vs indexOf(char) / indexOf(String)
+charAt() method takes an index and returns the found character at the given index
+indexOf(char) / indexOf(String) takes char or String and return the first occurrence index of the given argument
+
+
+String city = "miami";
+
+m i a m i
+0 1 2 3 4
+
+negatives   0 - 4  numbers more than 4
+
+city.charAt(0); // m
+city.charAt(2); // a
+city.charAt(5); // StringIndexOutOfBoundsException
+
+
+city.indexOf('m'); // 0
+city.lastIndexOf('m'); // 3
+city.indexOf("mi"); // 0
+city.lastIndexOf("mi"); // 3
+city.indexOf("miami"); // 0
+
+
+
+
+String movie = "The Godfather";
+
+T h e   G o d f a t h  e  r
+0 1 2 3 4 5 6 7 8 9 10 11 12
+
+
+
+"The" -> movie.substring(0, 3); // "The"
+"God" -> movie.substring(4, 7); // "God"
+"father" -> movie.substring(7); // "father"
+
+
+
+
+
+
+
+
+
+

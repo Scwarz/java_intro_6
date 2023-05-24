@@ -1,0 +1,42 @@
+
+
+
+03-11-2023 - Loops Part 1
+
+
+Loops: executing a block of code repeatedly - many times
+-it has a condition part
+-it has a termination (stop) point
+-saves redundant lines of code and make your reusable
+
+iteration: this is each execution of the block in a loop
+It is how many times your loop executes
+
+infinite loop: this is a loop that never meets the termination point and never stops. 
+
+
+1. For loop (i loop) - traditional loop
+SYNTAX:
+
+ for (startPoint; condition; change) {
+    //your code here
+ }
+
+
+i < 11  == i <= 10
+
+
+
+str.charAt(i) == 'A' || str.charAt(i) == 'a'
+str.toLowerCase().charAt(i) == 'a'
+str.toUpperCase().charAt(i) == 'A'
+
+
+
+
+
+
+
+
+
+

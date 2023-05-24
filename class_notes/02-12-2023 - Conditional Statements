@@ -1,0 +1,262 @@
+
+
+
+02-12-2023 - Conditional Statements
+
+
+RECAP: Casting
+-Casting is known as assigning one data type into another
+
+
+Casting types:
+1. Implicit casting: smaller data type into larger data type
+	byte age = 25;
+	int i = age;
+
+	-it happens automatically, no extra effort for the programmer
+	-widening or upcasting
+
+
+2. Explicit casting: larger data type into smaller data type
+	int i = 1000;
+	byte b = (byte)i;
+
+	-does not happen automatically, we have to take action
+	-narrowing or down-casting
+
+NOTE: boolean cannot be casted to any other data type
+
+
+Casting flows:
+implicit: byte -> short -> char -> int -> long -> float -> double
+explicit: double -> float -> long -> int -> char -> short -> byte
+
+
+
+Casting Characters:
+char c = 65; // 'A'
+
+int i = 65;
+char ch = (char)i;
+
+char character = 'D';
+int num = character; // implicit
+
+
+
+Conversion bt String and Primitives
+1. Primitives to String
+	a. concatenation
+	int i = 45;
+	String s = "" + i;
+
+	b. String.valueOf(i); // "45"
+
+
+2. String to primitives
+-Wrappers
+
+String s1 = "45";
+
+s + 5; // 455
+
+
+Integer.parseInt(s1) + 5; // 50
+Integer.valueOf(s1) + 5; // 50
+
+valueOf() -> it first converts String to a Wrapper object and then to primitive (unboxing)
+parseType() -> it right away converts String to a primitive
+parseInt(), parseDouble(), parseLong()
+
+
+
+Wrapper classes:
+-These are object version of primitives. They can do all primitives does + they have methods to manipulate data.
+
+
+Autoboxing: primitive -> Wrapper
+Unboxing: Wrapper -> primitive
+
+int age = 45;
+Integer i = age; // autoboxing
+
+Integer.parseInt();
+Integer.MAX_VALUE;
+Integer.MIN_VALUE;
+
+
+
+
+Conditional Statements:
+-if else statements
+-it works around a condition
+-it runs a block of code based on the condition
+
+
+boolean isThereClass = true;
+
+if(isThereClass){
+	//execute this block of code
+}
+else{
+	//execute this block of code
+}
+
+
+
+int age = input.nextInt();
+
+if(age >= 16){
+	System.out.println("You are eligible for DL");
+}
+else{
+	System.out.println("Sorry! You are NOT eligible for DL");
+}
+
+
+
+
+
+
+username = "johndoe", password = "1234"
+
+if(username.equals("johndoe")){
+	
+	if(password.equals("1234")){
+		System.out.println("Hello! You are logged in!");
+	}
+	else{
+		System.out.println("Password did not match any record");
+	}
+}
+else{
+	System.out.println("Username did not match any record");
+}
+
+
+
+
+Requirement coming from documents - client -> Expected
+Development by developers -> Actual
+
+if(actual == expected) //Test case PASSED
+else // Test case FAILED - create a bug report
+
+
+
+
+DEBUGGER
+-is break point that allows us to execute code line by line to monitor the results and address the missing or wrong codes.
+STEPS:
+1. put a breakpoint to a line (red point)
+2. Run your program in a debugger mode
+3. Use debugger window and Step Over to execute code line by line
+4. Check console for your outputs
+
+
+
+EVEN or ODD
+
+number % 2 == 0 		-> EVEN
+number % 2 != 1 		-> EVEN
+
+number % 2 == 1 		-> ODD
+number % 2 != 0 		-> ODD
+
+
+75 % 2 	-> 1 
+
+
+
+
+50 - 50
+
+if(true){
+	//run this
+}
+else{
+	// run this
+}
+
+
+
+
+3 options -> A number positive, negative or neutral
+
+if(number > 0){
+	//positive
+}
+else if(number < 0){
+	// negative
+}
+else{
+	//zero or neutral
+}
+
+
+
+
+
+
+4 options
+0-25
+25-50
+50-75
+75-100
+
+if(number <= 25){
+	//first
+}
+else if(number <= 50){
+	//second
+}
+else if(number <= 75){
+	//third
+}
+else{
+	// fourth
+}
+
+
+
+NESTED IF STATEMENTS
+-if-else statements inside another if-else blocks.
+
+
+
+weather being nice or not
+	if nice
+		if you have enough team members -> soccer game
+		get out
+	if not nice
+		if there is a nice movie - watch a movie 
+		invite friends
+
+
+if(isWeatherNice){
+	if(enoughMembers){
+		//soccer game
+	}
+	else{
+		// out
+	}
+}
+else{
+	if(isThereMovie){
+		//watch the movie
+	}	
+	else{
+		//invite friends
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+
+
+
+03-01-2023 - Recap String Methods P2
+
+String: String is a Java class
+We can create many String objects
+We can store a sequence of characters in a String
+
+//1st way of creating String
+String name = "John";
+String address = "";
+String phone = "";
+
+
+//2nd way of creating a String
+String name = new String("John"); // This way requires more memory
+
+
+//The way we create an object in Java
+Random random = new Random(); // Random class object
+Scanner scanner = new Scanner(System.in); // Scanner class object
+
+Date date = new Date(); // Date class object
+
+
+
+
+String methods: They are used for updating, extracting, removing, replacing, comparing, manipulating the data that String object stores.
+
+
+NOTE: DO NOT EVER USE == for comparing strings and all the other objects
+because == compares objects addresses in the memory not the values
+
+primitive == primitive
+
+"abcdab"
+
+"ab" == "ab"
+
+str.substring(0, 2) == str.substring(str.length() - 2) -> false
+str.substring(0, 2).equals(str.substring(str.length() - 2)) -> true
+
+
+
+
+str1 			str2
+
+
+if(str1.length() >= 2 && str2.length() >= 2){
+	// find str1 without first and last
+	// find str2 without first and last
+	// concat them and print it
+}
+else{
+	//invalid input
+}
+
+
+
+
+str1 			str2
+
+if(str1.length() < 2 || str2.length() < 2){
+	//invalid input
+}
+else{
+	// find str1 without first and last
+	// find str2 without first and last
+	// concat them and print it
+}
+
+
+
+
+Ternary
+
+int num1, num2;
+
+
+Find the max and print it
+
+int max;
+
+if(num1 > num2){
+	max = num1;
+}
+else{
+	max = num2;
+}
+
+
+int max = num1 > num2 ? num1 : num2;
+
+
+
+
+
+
+
+

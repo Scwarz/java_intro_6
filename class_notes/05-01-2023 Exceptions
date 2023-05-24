@@ -1,0 +1,130 @@
+
+
+
+05-01-2023 Exceptions
+
+Exceptions: are regarding the programmers code and can be fixed by programmer
+
+Errors: cannot be fixed by programmer. They are not even programmers responsibility.
+
+
+
+Runtime Exceptions: are also known as unchecked exception
+-Compiler will not show any issue but you will get exception when you run the program.
+	StringIndexOutOfBoundsException
+	ArrayIndexOutOfBoundsException
+	NullPointerException
+	IndexOutOfBoundsException
+	ClassCastException
+	ConcurrentModificationException
+
+
+CompileTime Exceptions: are also known as checked exception
+-Compiler will right away show an exception may come up with your program and you need to handle it to continue.
+-You cannot even run that code.
+	InterruptedException
+
+
+
+
+
+HOW TO HANDLE EXCEPTIONS?
+1. Add it to method signature: this can be used only for checked exception - CompileTime Exceptions
+
+2. Use try-catch blocks: this can be used both for checked and unchecked exceptions - Runtime and CompileTime Exceptions 
+
+
+
+try-catch blocks
+-they are used to execute a block of code and in case there is an exception might thrown from the block, then the catch block is going to catch the exception and we can run another block inside the catch block.
+
+
+SYNTAX:
+
+try{
+	// this is your block of code to try
+}
+catch(Exception e){
+	// this is the block may run in case of exception caught
+}
+
+
+NOTE: catch block will not be executed if there is not Exception thrown from the try block.
+
+
+
+
+try-catch-finally blocks
+try{
+	// this is your block of code to try
+}
+catch(Exception e){
+	// this is the block may run in case of exception caught
+	// this will not run when there is no exception
+}
+finally{
+	System.out.println("I AM HERE TO RUN ALL THE TIME!!!");
+}
+
+
+
+finally block
+-it is about the exception handling
+-it is an optional block that can be used to run a block of regardless of you getting exception or not
+
+
+RULES:
+-try - catch - finally are only used for the exception handling purposes
+-try block MUST always be followed either with catch or finally or both
+-catch or finally blocks CANNOT be used without try block
+
+
+Can I use try block without catch block?
+-YES
+-In this case I need finally block for try
+
+
+Can I have multiple catch blocks for a single try block?
+-Yes
+-these catch block can be used for different types of Exceptions
+
+NOTE: This is not preferred as we can handle any number or types of exceptions in one catch block
+
+
+NOTE: If there is possibility that try block may throw multiple exception, we may prefer to catch parent Exception that handles all the possible Exceptions.
+
+
+
+What are final, finalize and finally?
+-final is a non-access modifier
+	-final attributes: they cannot be changed
+	-final classes: cannot be inherited
+	-final method: cannot be overridden
+
+-finalize() is a method
+	-it is related to garbage collection
+	-it comes from Object class
+	-Any custom class can override this to provide better garbage collection process
+
+-finally is a block
+	-it is related to exception handling
+	-can be used together with try block or try-catch blocks
+	-this block will execute regardless of having an exception or not in the try block
+
+
+
+
+
+throw vs throws?
+-throws keyword can be used to handle checked exceptions by adding them to the method signature
+-throw is used to throw an exception intentionally
+
+
+
+
+
+
+
+
+
+

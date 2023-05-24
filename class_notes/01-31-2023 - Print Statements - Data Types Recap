@@ -1,0 +1,107 @@
+
+
+01-31-2023 - Print Statements & Data Types Recap
+
+
+Println vs Print
+
+Why do we use Println over Print?
+Println - With Println we get a new line
+    System.out.println("Hello World"); // \n escape sequence is implicit
+
+    Output:
+    Hello World
+    <- With the println, the cursor ends here
+
+Print - It will print whatever is output in System.out.print without any spaces or new lines
+    System.out.print("Hello World");
+    System.out.print("Hello" + " World"); // HelloWorld
+
+    Output:
+    Hello World<- With the print, the cursor ends here
+
+Single line comments: // Your comment goes here
+
+Multi-line comments:
+    /*
+        Your comments go in here
+    */
+
+Documentation comments: (highlights text in green, to make it easier for people to read what your code does)
+    /**
+    *
+    */
+
+If we have a really long statement to print, we can use '+' to newline the statement to fit better.
+
+    System.out.println("gadfadfasaasssssssssssssssssssssssssssssssssssssssssss" +
+        "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" +
+        "ssssssssssss"
+
+Escape Sequences
+
+    \t -> Gives a tab
+    \n -> Gives a new line
+    \\ -> Prints a single \
+    \' -> Prints a single '
+    \" -> Prints a single "
+
+    System.out.println("Hello World" + "\t" + "My name is " + "\n" + "\"Jonathan\"");
+
+    Output:
+    Hello World    My name is
+    "Jonathan"
+
+
+Primitives
+
+    int, short, byte, long, double, float, char, boolean
+
+    boolean is used for true or false, 1 bit size. 0 = false, 1 = true
+
+    char is used for a single character.
+    char uses single quotations for the value. ex. 'A'
+    char myFavoriteLetter = 'A';
+
+    int myAge = 20;
+    byte myAge = 20;
+
+    // if we don't add the F at the end of the value, Java will give an error to use Double instead
+    float myAge = 20.5F;
+    double myAge = 20.5;
+
+    String statement = "Hello";
+
+    String is not a primitive. It's an object that is in someway made of up of a number of chars.
+    ['H']['E']['L']['L']['O']
+
+Data Types
+
+    variableType variableName = valueThatMatchesType;
+    byte myAge = 20;
+    String myFirstName = "Jonathan";
+    String myLastName = "Ochoa";
+
+    System.out.println(myFirstName);
+    System.out.println("Jonathan");
+
+    Output:
+    Jonathan
+
+
+    System.out.print(myAge);
+
+    Output:
+    20
+
+    System.out.println("My name is " + myFirstName + " " + myLastName);
+    System.out.println("Jonathan Ochoa");
+
+    Output:
+    Jonathan Ochoa
+
+
+
+
+
+

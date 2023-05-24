@@ -1,0 +1,225 @@
+
+
+
+02-04-2023 Operators
+
+
+RECAP:
+
+Naming convention:
+Class name: 
+	-Meaningful
+	-Starts with uppercase
+	-Follows camelcase rule
+	-It cannot start with digits and specials except _, $ the other currencies
+	-It cannot have space
+
+Package name:
+	-Meaningful
+	-Starts with lowercase
+	-Follows camelcase rule
+	-It cannot start with digits and specials except
+	-It cannot have space (my_package)
+
+public class MyClass{
+	public static void main(String[] args){
+		// all our code goes here
+	}
+}
+
+
+Variable: containers that stores data.
+dataType variableName = value;
+
+int age = 25;
+String name = "John";
+
+In the above statements, age and name are variables used to store data.
+
+
+Primitives:
+byte, short, int, long 	-> absolute numbers like 2, 10, 35
+float, double	 		-> decimal numbers like 2, 10.65, 
+char 					-> single character like 'A', '$'
+boolean 				-> true or false
+
+
+
+int age = 25;
+double price = 25;
+char var1 = 'e';
+boolean b1 = true;
+boolean b2 = false;
+
+
+String var2 = "text";
+
+
+NOTE: Store all the currency related data in double.
+
+String age = "25";
+
+
+
+Scanner: 	
+-It is a Java class that helps reading input from user.
+-It comes from java.util package
+-It has some pre-defined methods for reading different types of data.
+
+next() 		-> reads only one String data from the user
+nextLine() 	-> reads the whole line as a String from the user
+nextInt() 	-> reads the next absolute number data from the user
+nextDouble()-> reads the next decimal number data from the user
+
+
+HOW TO USE Scanner Object?
+1. Create a Scanner object
+	Scanner varName = new Scanner(System.in);
+
+	input, myScanner, scanner, scan, inputReader
+
+2. Make sure it is imported from java.util package
+3. Use variable name to read data from the user
+
+
+Redundant: extra code in your program that can be eliminated.
+
+
+NICE CODE:
+Readable: 
+	-providing space for the operators
+	-meaningful identifiers (variable, class, package, object)
+
+Reusable: reuse your object and variables if possible
+
+Comments: single line, multiline, documentation
+
+//single
+
+/*
+multiline
+*/
+
+/**
+*
+*Documentation
+*
+*/
+
+
+
+Scanner problem for skipping some questions!!!
+
+next(), nextInt(), nextDouble()... 
+
+empty line -> nextLine()
+
+nextLine()
+
+
+
+
+OPERATORS
+1. Assignment Operator
+	= operator is used to assign values into variables
+
+	int age = 45; // data = number
+	String name = "John"; //  data = text
+	Scanner input = new Scanner(System.in); // data = scanner object
+
+2. Arithmetic operators
+Java has 5 basic arithmetic operators
+	+ 	addition
+	- 	subtraction
+	* 	multiplication
+	/ 	division
+	% 	modulus (remainder)
+
+
+REMAINDER
+First number is greater than the second and first number and is not divisible by the second?
+
+10 % 4 = 2 		-> 10 = 2*4 + 2
+35 % 8 = 3 		-> 35 = 4*8 + 3
+
+23 % 9 = 5		-> 23 = 2*9 + 5
+
+63 % 8 = 7		-> 63 = 7*8 + 7
+
+
+First number is greater than or equals the second and first number and is divisible by the second number?
+
+4 % 2 = 0 		-> 4 = 2*2 + 0
+5 % 5 = 0
+35 % 7 = 0
+
+
+
+
+First number is less than the second
+3 % 5 	= 3 	-> 3 = 0*5 + 3
+27 % 30 = 27 	-> 27 = 0*30 + 27
+7 % 10 = 7
+
+
+23 % 3 = 2
+7 % 15 = 7
+10 % 10 = 0
+35 % 5 = 0
+
+
+NOTE: BE CAREFUL with + operator
++ is used for concatenation
++ is used for addition
+
+num + num + num -> addition
+"" + num + num 	-> concatenation
+
+"The sum = 105"
+
+
+JAVA EXECUTION ORDER
+Top to bottom
+Left to right
+
+
+
+
+
+Order of operations
+1. Exponential
+2. Parentheses
+3. Multiplication/division
+4. Sum/subtraction
+
+
+
+3 + 5 - 2 * 3 = 
+
+(3 * (2 + 5 - 3)) / 2 = 6
+
+2^3 + 5 / 5 * 3 + 3 - 2 = 12
+
+
+
+
+
+Shorthand Assignment operators
++=   
+-=
+/=
+*=
+%=
+
+
+
+double balance = 100.0;
+
+balance -= 4.53; // 95.47
+
+balance -= 25.27; // 70.2
+
+balance += 150.0; // 220.2
+
+
+

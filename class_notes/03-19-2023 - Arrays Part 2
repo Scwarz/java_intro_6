@@ -1,0 +1,163 @@
+
+
+
+03-19-2023 - Arrays Part 2
+
+RECAP:
+
+Arrays: 
+-It is a collection that stores similar-multiple data
+-Collections: Arrays, ArrayList, HashSet, HashMap, Queue
+	Arrays is the base for all the other collections
+-Each data we have in the array is known as ELEMENT
+-Array can be empty or you can have as many values inside it
+-Arrays are fixed sized. So, once you declare the array, it is not possible to change the length by adding or removing
+
+
+
+HOW TO INITIALIZE AN ARRAY?
+SYNTAX:
+-If you know the number elements but you don't know what they are
+dataType[] varName = new dataType[capacity];
+int[] ages = new int[3]; // I will store 3 numbers here
+
+-if you already know what are your elements
+dataType[] varName = {el1, el2, el3, el4};
+String[] countries = {"Belgium", "Germany", "USA"};
+
+
+-Declaring an array
+dataType[] varName;
+
+-Assigning an array
+varName = new dataType[capacity];
+
+
+String name; //declaration
+name = "John"; // assignment
+String name = "John"; // declaration and initialization
+
+
+
+CAN WE CHANGE THE LENGTH OF AN ARRAY AFTER INITIALIZING?
+- No, arrays are fixed sized and they cannot be modified with their initial capacity.
+
+
+
+HOW TO PRINT THE ARRAYS?
+1. Convert it to a String
+2. Print your String
+
+System.out.println(Arrays.toString(arrayVariable));
+
+
+
+HOW TO FIND THE SIZE OF AN ARRAY? HOW MANY ELEMENTS YOU HAVE?
+-We can find it by length property
+
+	arrayVariable.length; //  returns the size as an int
+
+
+
+FOR EACH LOOP
+-It is known as enhanced for loop
+-It was introduced with later Java versions
+-It can only be used with collections like arrays, lists, sets, maps
+-For each loop does not allow you to start from the middle or the last
+-When you need to update collection elements, it is better to use fori loop
+
+
+SYNTAX:
+for(dataType varName : collection){
+	/code block
+}
+
+
+NULL KEYWORD
+-PRIMITIVES cannot be null
+-Objects can be defined as null
+-null means your variable is not pointing any value in the memory
+-null means there is no value
+-NullPointerException
+
+MEMORY
+
+String name = null; // ""
+
+String address = "Chicago";
+
+address.charAt(0); // 'C'
+
+
+
+
+Phone number
+
+
+
+
+
+DEFAULT VALUES:
+boolean[] numbers = boolean int[3]; // [false, false, false]
+
+byte, short, int, long 	-> 0
+float, double 			-> 0.0
+char 					-> 
+boolean 				-> false
+Object 					-> null
+
+
+Double[] d = new Double[2]; // [null, null]
+float[] f = new float[3]; // [0.0, 0.0, 0.0]
+
+Boolean[] b = new Boolean[3]; // [null, null, null]
+
+Wrapper classes -> Byte, Short, Integer, Long, Float, Double, Character, Boolean
+
+
+
+
+HOW TO SORT AN ARRAY?
+-Sorting an array means ordering elements inside an array
+	numbers: ascending order, smallest to greatest
+	strings: alphabetically, lexicographically
+
+	"Alex", "ali", "John", "James" -> Alex, James, John, ali
+
+-Arrays class has method called sort() and it can be used to sort array elements
+
+int[] numbers = {5, 3, 10};
+String[] words = {"Alex", "ali", "John", "James"};
+
+//Sort them 
+Arrays.sort(numbers);
+Arrays.sort(words);
+
+
+//Print the arrays back
+System.out.println(numbers); // [3, 5, 10]
+System.out.println(words); // [Alex, James, John, ali]
+
+
+
+
+
+
+HOW TO SEARCH IN AN ARRAY?
+1. We can either use loop logic or binarySearch() method
+	NOTE: binarySeacrh() method can ONLY be used with sorted arrays
+2. binarySearch(arrayVar, element) method takes 2 argument, first is the array and second is the element you are looking for
+3. if element exists in the array, you will get index of 0 or positive
+4. if element does not exist in the array, you will get a negative index (-insertion point -1)
+
+
+
+
+== cannot be used to compare strings
+
+
+
+
+
+
+

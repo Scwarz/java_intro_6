@@ -1,0 +1,122 @@
+
+
+02-22-2023 - Methods
+
+
+Method or function: block of code that runs certain task when invoked
+-every method has a meaningful name that is related to task it is running
+
+SYNTAX:
+myMethod(){
+	//code block
+}
+
+
+{} -> known as a block
+
+
+GOAL: Write reusable code with custom methods
+
+
+
+void and return type methods
+
+1. return type
+Syntax:
+accessModifier returnType methodName(){ 
+	// method body
+}
+
+NOTE: if your method is a return type, then you need specify what it returns
+-Return can be primitives, or any object
+-We MUST use return in the body to return something
+-<return> keyword must be the last statement and we should not have any code after the return statement.
+-if you have code after the return statement, it will be unreachable and will give a compiler error.
+
+
+
+
+2. void type
+-does not return anything and created with <void> keyword
+-we do not use <return> keyword with void methods
+
+public void printName(String name){
+	System.out.println(name);
+}
+
+
+
+METHOD COMPONENTS
+returnType- It specifies what type of value a method returns. 
+
+methodName - It is an identifier that is used to refer to the method in a program, could be any name but should be meaningful to increase readability of your code.
+
+method body - It includes the programming statements that are used to perform some tasks. The method body is enclosed inside the curly braces { }
+
+method parameters – Arguments that we pass inside the method parentheses
+
+
+
+
+
+HOW DO WE CREATE A METHOD? WHAT INFORMATION DO WE NEED?
+
+1. We need the task it will perform
+2. We need to give it a name
+3. Decide the accessibility 
+4. static or non-static (accessibility)
+5. return or void
+6. arguments or no
+
+
+
+NOTE: We cannot have 2 methods having the same name and same arguments in the same class.
+
+BUT, we can have multiple methods sharing the same if they have different arguments - method overloading
+
+
+
+1.	public static int sum(int a, int b){
+        return a + b;
+    }
+
+2.  public static int sum(int a, int b, int c){
+        return a + b + c;
+    }
+
+3.  public static double sum(double a, double b){
+        return a + b;
+    }
+
+4.  public static long sum(long a, long b){
+        return a + b;
+    }
+
+
+*** Method overloading is one of the most asked interview question and it will be asked in our mock interviews as well.
+
+
+Generate a random number between 10 and 20
+1. Find how many numbers you have in the range -> 11
+2. Use Math.random() or Random class object
+
+
+public static int getRandomNumber(int start, int end){
+	Random r = new Random();
+	return r.nextInt(end - start + 1) + start; 
+}
+
+
+
+return type vs void type
+Whether the method returns or not
+
+
+static or non-static
+Whether you will invoke the method with Classname or object
+
+
+
+
+
+

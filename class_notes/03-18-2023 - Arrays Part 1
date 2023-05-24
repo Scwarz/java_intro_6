@@ -1,0 +1,151 @@
+
+
+
+03-18-2023 - Arrays Part 1
+
+
+String name = "John";
+
+int age = 45;
+
+
+Collections - Data structures
+-There are many collections or data structures that programming languages provides.
+-Some allow duplicates, some does not
+-Some of them sorts the given values by default, some does not
+	sort = ordering
+-Some has more difference than the others
+
+
+-Every value you put in the array is known as ELEMENT
+
+
+Store all the group names and their ages
+String member1Name = "John";
+String member2Name = "Alex";
+
+
+String[] names = {"John", "Alex"};
+int[] ages = {45, 30};
+char[] chars = {'#', 'g', '$'};
+double[] balances = {10, 12.5, 5.3};
+boolean[] booleans = {true, false, false};
+
+
+
+HOW MANY ELEMENTS I HAVE IN THE ARRAY
+names.length; // 2
+chars.length; // 3
+
+
+HOW TO GET A PARTICULAR ELEMENT FROM THE ARRAY
+names[1]; // Alex
+balances[2]; // 5.3
+
+
+booleans[5]; // ArrayIndexOutOfBoundsException
+ages[-1]; // ArrayIndexOutOfBoundsException
+
+
+
+int member1Age = 45;
+int member2Age = 30;
+
+
+
+FOR EACH LOOP
+
+for(dataType variableName : collection){
+	// block of code to be executed
+}
+
+
+ARRAY SYNTAX:
+-If you already know what are your elements
+dataType[] varName = {el1, el2, el3};
+
+
+-If you know the length but not the values
+-In this case, we will declare an array with the length
+-NOTE: Once the length is declared, you cannot change anymore.
+You cannot delete an element or you cannot add elements.
+
+dataType[] varName = new dataType[length];
+
+/Create an int array that will store 5 numbers
+int[] numbers = new int[5];
+
+Arrays.toString(numbers); // [0, 0, 0, 0, 0]
+
+//Create a double array that will store 3 decimal numbers
+double[] numbers2 = new double[3]; 
+
+Arrays.toString(numbers); // [0.0, 0.0, 0.0]
+
+
+//Create a String array that will store 6 words
+String[] words = new String[6];
+
+Arrays.toString(words); // [null, null, null, null, null, null]
+
+
+NOTE: the default value for all the Objects including String is null
+
+
+
+
+// HOW TO PRINT THE ARRAY 
+// 1. Convert your array to a String
+// 2. Print it with print method
+
+
+
+
+double[] balances = {10.5, 12.3, 30};
+
+
+for(double element : balances){
+	sout(element); 
+}
+
+
+EXPECTED OUTPUT:
+10.5
+12.3
+30.0
+
+
+
+
+USER STORIES
+	Requirements
+	Test cases
+	Testing
+	BUGS-DEFECTS
+
+
+
+EXPECTED ANSWER: The length is 4
+
+
+// 4. Print each element using for each loop
+
+for(double number : numbers){
+	System.out.println(number);
+}
+
+
+
+		int sum = 0;
+
+        for (int number : numbers) {
+            sum += number;
+
+        }
+        System.out.println(sum);
+
+
+
+
+
+

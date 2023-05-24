@@ -1,0 +1,49 @@
+
+
+
+03-28-2023 - ArrayList vs LinkedList vs Vector
+
+How to convert an ArrayList to an Array?
+-we use toArray() method
+-this method always return an Object[] 
+
+
+ConcurrentModificationException
+-You will get this Exception when you try removing elements with a loop.
+-Runtime is not allowing you to modify the size of the collection while you loop it.
+
+
+
+
+Assume that you are give some numbers, and asked to return uniques
+
+
+Object[] getUniques(List<Integer> numbers){
+	ArrayList<Integer> list = new ArrayList<>();
+
+	//find all the uniques
+
+	return list.toArray();
+}
+
+
+
+
+Removing all the elements that has R or r
+Return the ones that does not have R or r
+
+
+Remove all the elements that has vowels 
+Keep all the the elements that does not have any vowel
+
+
+
+
+Iterator
+3, 0, 30
+
+
+hasNext() 	-> checking if there is element left in the list
+next() 		-> getting the next element
+remove() 	-> removes the elements that is received
+

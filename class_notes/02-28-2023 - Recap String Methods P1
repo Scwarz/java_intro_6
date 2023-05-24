@@ -1,0 +1,157 @@
+
+02-28-2023 - Recap String Methods P1
+
+str.isEmpty() 
+str.equals("")
+str.length() == 0
+str.length() < 1
+-> can be used to check if the object String is empty or not
+
+
+String s = "";
+
+s.substring(0, 1);
+
+
+NOTE: 
+-Use charAt(index) method if you are extracting a single character from the String object
+-Use substring(startIndex, endIndex) or substring(startIndex) when you are exatracting multiple characters from the String object
+
+
+
+
+EXATRACTING CHARACTERS
+
+String 		first 		last
+"Hello" 	0 			4 		-> str.length() - 1
+"Java" 		0 			3 		-> str.length() - 1
+"Hi" 		0 			1 		-> str.length() - 1
+"TechGlobal"0 			9       -> str.length() - 1
+
+
+first -> str.charAt(0)
+last  -> str.charAt(str.length() - 1)
+
+
+
+Vowels = a, e, i, u, o, A, E, I, U, O
+
+BELOW STATEMENTS ARE SAME
+str.contains("a") || str.contains("A")
+str.toLowercase().contains("a")
+str.toUppercase().contains("A")
+
+
+
+
+		""          -> Length is less than 3
+        "ab"        -> Length is less than 3
+        "abc"       -> b
+        "civic"     -> v
+        "java"      -> av
+        "toyota"    -> yo
+        "TechGlobal"-> Gl
+
+
+How do we get the middle one or middle 2 chars based on odd-even length?
+
+odd 	-> one character -> charAt() method
+even 	-> two character -> substring() method
+
+
+String 		index 	formula
+abc 		1 		str.length() / 2 		
+civic 		2	 	str.length() / 2 
+chicago 	3 		str.length() / 2
+
+java 		1,3 	str.length() / 2 - 1, str.length() / 2 + 1
+toyota      2,4     str.length() / 2 - 1, str.length() / 2 + 1
+TechGlobal  4,6     str.length() / 2 - 1, str.length() / 2 + 1
+
+
+String str = "toyota";
+str.substring(str.length() / 2 - 1, str.length() / 2 + 1)
+
+
+
+        Java
+        First 2 characters are = Ja
+        Last 2 characters are = va
+        The other characters are =
+
+
+        Python
+        First 2 characters are = Py
+        Last 2 characters are = on
+        The other characters  are = th
+
+
+        TechGlobal
+        First 2 characters are = Te
+        Last 2 characters are = chGlob
+        The other characters  are = al
+
+
+
+
+Word 		first2			last2 			middle
+java 		ja 				va
+python 		py 				on 				th
+TechGlobal  Te 				al 				chGlob
+
+
+
+first2
+str.substring(0, 2)
+
+
+last2
+str.substring(str.length() - 2)
+str.substring(str.length() - 2)
+str.substring(str.length() - 2)
+
+
+middle except the first 2 and the last 2
+str.substring(2, str.length() - 2)
+
+
+
+
+GETTING THE FIRST CHARACTERS
+First char 		-> str.charAt(0);
+First 2 chars 	-> str.substring(0, 2);
+First 3 chars   -> str.substring(0, 3);
+First 4 chars   -> str.substring(0, 4);
+
+
+GETTING THE LAST CHARACTERS
+Last char 		-> str.charAt(str.length()-1);
+Last 2 chars 	-> str.substring(str.length()-2);
+Last 3 chars   	-> str.substring(str.length()-3);
+Last 4 chars   	-> str.substring(str.length()-4);
+
+
+
+
+Monday -> Java Project DUE at 3 PM
+Tuesday-> CodingBat DUE at 3 PM
+Wednessday -> Java Homework DUE at 3 PM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

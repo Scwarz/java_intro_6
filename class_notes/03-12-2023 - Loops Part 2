@@ -1,0 +1,226 @@
+
+
+
+03-12-2023 - Loops Part 2
+
+
+Loops
+	-
+
+
+1. for loop - i loop - traditional loop
+2. while loop
+3. do-while loop
+4. for each loop - used with collections
+
+
+
+INFINITE LOOP: this is the loop you have a mistake and never stops.
+The update is not going towards the termination condition
+
+for(initialization; termination; update){
+	
+}
+
+for(int i = 10; i < 20; i--){ // infinite loop
+	
+}
+
+for(; ;){ // infinite loop
+	
+}
+
+
+OCA EXAM: JAVA Certification
+
+
+
+A LOOP THAT NEVER RUN:
+-When the condition is false for the first iteration, then the loop does not run.
+
+for(int i = 10; i > 20; i++){
+	System.out.println(i);
+}
+
+
+
+iteration: each time that loop executes
+
+
+
+
+
+while loop syntax:
+-initialization, termination, update
+
+initialization
+
+while(condition){
+	//block of code to be executed
+	update
+}
+
+
+int num = 1;
+
+while(num <= 5){
+	sout(num);
+	num++;
+}
+
+
+
+String name = "Okan"; // nakO James
+
+name.charAt(3) + name.charAt(2) + name.charAt(1) + name.charAt(0)
+n 				 a 				  k 			   O
+
+
+3,2,1,0
+
+String str = "";
+
+for(int i = name.length()-1; i >= 0; i--){
+	str += name.charAt(i);
+}
+
+return str;
+
+
+-last char to first char
+-length times execution
+
+for(int i = name.length()-1; i >= 0; i--){
+	System.out.println(name.charAt(i));
+}
+
+
+
+do-while loop syntax:
+
+do{
+	//a block code of to execute
+}
+while(condition);
+
+run the block of the code while the condition is true;
+
+NOTE: do-while loop will always execute at least once
+
+the do while loop can be used in all scenarios where the loop body needs to be executed at least once.
+
+
+Write a program that asks user to enter a positive number,
+Keep asking until they enter positive number
+
+Please enter a positive number:
+-5
+
+
+Please enter a positive number:
+-2
+
+
+Please enter a positive number:
+0
+
+
+
+Please enter a positive number:
+5
+
+
+
+End of the program
+
+
+
+
+
+Please enter a positive number:
+5
+
+End of the program
+
+
+
+
+CONTROL STATEMENTS
+break; // is used to completely break the loop
+continue; // is used to skip one (current) iteration
+
+
+
+
+
+HOW TO DECIDE BETWEEN FOR, WHILE and DO-WHILE
+
+Do I know the exact number of iteration?
+
+YES 				NO
+for 				while or do-while
+
+					Do I need to execute the block at least once?
+
+					YES 			NO
+					do-while        while
+
+
+
+
+
+
+for(int i = 1; i <= 10; i++){ // outer loop
+	for(int j = 100; j <= 500; j++){ // inner loop
+	
+	}
+}
+
+10 times the outer loop is running
+for each outer loop iteration, the inner loop will run 401 times
+
+i = 1
+	j = 100
+	j = 101
+	j = 102
+	.
+	.
+	.
+	.
+	.
+	j = 500
+i = 2
+	j = 100
+	j = 101
+	j = 102
+	.
+	.
+	.
+	.
+	.
+	j = 500
+i = 3
+	j = 100
+	j = 101
+	j = 102
+	.
+	.
+	.
+	.
+	.
+	j = 500
+
+
+i = 10
+	j = 100
+	j = 101
+	j = 102
+	.
+	.
+	.
+	.
+	.
+	j = 500
+
+
+

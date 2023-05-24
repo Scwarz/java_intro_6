@@ -1,0 +1,68 @@
+
+
+
+05-02-2023 Enum & Date-Time 
+
+LocalDate, LocalTime, LocalDateTime, Calendar, Duration, Period,
+DateTimeFormatter, Calendar
+
+MMM or M 	-> Jan, May, Jun
+MMMM 		-> January, June, September
+yyyy		-> 2023
+MM/dd/yyyy 	-> 05/02/2023
+hh:mm:ss.SSS-> 20:12:45.123
+
+
+enum = enumaration
+-We use enum for constants that will never change.
+-We can create enum with <enum> keyword
+
+public enum Day{
+	MONDAY,
+	TUESDAY,
+	.
+	.
+	.
+}
+
+
+public enum Direction{
+	EAST,
+	NORTH,
+	SOUTH,
+	WEST
+}
+
+
+public enum Color{
+	PURPLE,
+	.
+	.
+}
+
+
+public enum Level{
+	HIGH,
+	LOW,
+	MEDIUM
+}
+
+
+
+Gender, Planets, Countries, States, OS, Seasons, T-ShirtSizes, ErrorCodes, Alphabet, Digits
+
+
+public enum Frequency{
+	HOURLY,
+	DAILY,
+	WEEKLY,
+	BI_WEEKLY,
+	MONTHLY,
+	YEARLY
+}
+
+
+
+
+
+

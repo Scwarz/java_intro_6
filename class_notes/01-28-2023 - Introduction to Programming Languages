@@ -1,0 +1,230 @@
+
+
+01-28-2023 - Introduction to Programming Languages
+Computer: 
+-machine that takes input and respond with an output
+-answers questions
+-device that can communicate the other devices
+-stores, retrieves and processes data
+-calculates
+
+
+
+Binary code: ones and zeros
+-It is machine language
+-Videos, texts, images, maps
+-Counting system
+
+one = ON
+zero = OFF
+
+CPU: Central Processing Unit
+
+
+
+Counting System
+
+Oldest way of counting -> | | | | | | | | | | | | | | |
+
+Binary -> 0, 1
+
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024
+
+Decimal System -> 0, 1, 2, 3, 4 .... 9
+
+10, 20, 30 .... 99
+
+100, 200, 300, 999
+
+1000, 2000, 9999
+
+
+HUMAN WAY - Decimal 		Machine - BINARY WAY
+0 							00000000
+1 							00000001
+2 							00000010
+3 							00000011	
+27 							00011011
+65 							01000001
+
+Java 	-> 
+
+A -> 01000001
+a -> 01100001
+
+
+01000001 != 01100001
+
+
+
+CAT
+C = 67 	01000011		
+A = 65 	01000001
+T = 84  01010100
+
+CAT -> 010000110100000101010100
+
+Pen -> 
+
+P = 80
+e = 101
+n = 110
+
+
+00111000   -> What is this character?
+56 -> digit 8
+
+
+01011111
+64 + 16 + 8 + 4 + 2 + 1 -> 95 
+_ under score
+
+
+{} 		-> curly braces
+[] 		-> square brackets
+() 		-> parantheses
+<> 		-> diamond brackets
+: 		-> colon
+; 		-> semi-colon
+, 		-> coma
+. 		-> dot
+! 		-> exclamation mark
+& 		-> AND
+| 		-> pipe
+/       -> forward slash
+\       -> back slash
+^ 		-> carrat
+
+
+
+PROGRAMMING LANGUAGE
+-A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks.
+
+-Set of rules
+
+
+-Natural languages: English
+	alphabet, words, sentences, grammar
+
+
+-Programming languages: Java, C# 
+	keywords (reserved)
+	syntax: grammar of programming languages
+
+NOTE: Programming languages lack ambiguity, conflict, confusion.
+
+
+- Each programming language has different rules, keywords etc.
+- Different languages for different purposes, tasks
+
+
+How did you find your first job? -> Error
+
+Statements = a line of code
+
+
+SDLC -> Software Development Life Cycle
+
+Problem or a need -> An IDEA - Client -> PO - Re
+
+'TAILOR' -> sewing machine parts
+Contruction worker 
+
+Instagram, Facebook, Netflix, HBO
+Gmail, Outlook
+Amazon, EBay, Etsy
+Banking mobile app - Zelle
+
+Client
+Chatting apps - translator apps
+
+Requirements
+Platform where people can sell or buy products.
+
+return information
+Username, password, email
+10 payment methods
+3 addresses
+300 products - Date, product details, price
+
+
+Design
+UI/UX designer
+Figma, Photoshop, Adobe, Paint
+
+
+Developer - coding
+
+
+Design, expected ----- Development actual
+				 TESTER
+
+
+If expected and actual are equal -> TESTER gives OKAY
+Otherwise, TESTER reports an issue - bug - defect
+
+
+
+
+JAVA 
+-Object-oriented language
+-Platform independent "Write once run everywhere" WORE
+-Android apps
+-Mostly for backend development
+-Gaming like Maincraft
+
+-EASY TO LEARN
+-Compiler language: set of rules that you should follow
+-Interpret language: flexible 
+
+Architecture: JDK, JRE, JVM, JIT
+
+JDK: Java Development Kit : full package
+JDK = JRE + JVM + Development tools
+
+JRE: Java Runtime Environment
+JRE = JVM + libraries
+
+JVM: Java Virtual Machine
+JVM execute the code
+
+JIT: Just In Time Compiler
+Helps with compiling the code and making it faster
+
+
+Execution 		execute
+Compilation 	compile
+
+System.out.println("Hello World!");
+
+Source code = code that is written in any programming language
+
+Byte code = compiled code
+
+Binary code = ones znd zeros
+
+
+PROCESS OF EXECUTION: source code -> JVM (byte code) -> binary code
+
+
+compiler = converts source code into byte code
+execution = running the code
+
+javac -> will compile the code
+java  -> will execute the code
+
+OS: MacOS, Windows, Linux, Unix, IOS, Android
+
+
+COMMENTS IN OUR CODE
+     
+        //Single-line comment
+        
+        /*
+        Multi-line comments
+        Hello....
+        World.....
+        My name
+        TechGlobal
+         */
+

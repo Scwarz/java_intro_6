@@ -1,0 +1,229 @@
+
+
+
+02-05-2023 Operators
+
+Operators: Symbols used for math, logical, comparison, relational, assignment
+
+Assignment operator:
+=
+dataType variableName = value;
+
+
+Arithmetic:
++ - / * %
+
+
++ operator used for concatenation and addition
+
+String + String -> concatenation
+number + number -> addition
+String  + number -> concatenation
+String + number + number -> concatenation
+String + (number + number) -> addition, concatenation
+number + number + String -> addition, concatenation
+
+
+
+Shorthand Assignment operator:
++= 
+-=
+/=
+*=
+%=
+
+int number = 45;
+
+//number = number + 10;
+number += 10;
+
+System.out.println(number);
+
+
+
+1. Assignment operator
+2. Arithmetic operators
+3. Shorthand assignment operator
+
+4. Increment and decrement operators
+
+int number = 10;
+
+number++; // post increment
+++number; // pre increment
+
+number--; // post decrement
+--number; // pre decrement
+
+NOTE: We will mostly be using post increment and post decrement
+number++; 
+number--;
+
+
+++ increases the variable by one.
+-- decreases the variable by one.
+
+
+5. Relational operators
+Relational operators are used to compare 2 expressions and returns a boolean
+
+Relational operators always return either true or false
+
+< 	is used for less than
+<= 	is used for less than or equals
+> 	is used for greater than
+>= 	is used for greater than or equals
+== 	comparison -> checks if both sides are equal
+!= 	comparison (not equal) -> checks if both sides are not equal
+
+
+3 < 5 		-> true
+10 >= 3 	-> true
+
+5 == 5 		-> true
+3 != 5 		-> true
+
+10 != 10 	-> false
+
+
+3 + 5 == 2 * 4 	-> true
+8 == 8 			-> true
+
+
+5 > 10 	-> false
+3 >= 2 	-> true
+
+
+
+NOT OPERATOR (!)
+
+
+6. Logical operators
+Logical operators are used to check multiple conditions and they return a boolean
+There are 2 types of logical operators used in Java
+
+	1. AND operator &
+	2. OR operator |
+
+With or statements, if one expression is true, then whole expression is true
+With and statements, if one expression is false, then whole expression is false
+
+Today is Sunday or Monday 		-> true
+Today is Sunday and Monday 		-> false
+
+Today is Sunday and we have online class -> true
+Today is Sunday and we do not have class -> false
+
+
+I am wearing white or blue t-shirt -> true
+Today is Sunday or Monday or Tuesday or Wednesday -> true
+
+
+2 < 5 && 5 != 5 		-> false
+
+7 < 7 || true 	-> true
+
+5 != 7 && 3 == 3 	-> 
+true && true 		-> true
+
+
+(5 != 5 || 10 <= 10) && false 	-> false
+
+
+2 < 1 || 5 > 10 	-> false
+
+
+true && (true) && false 	-> false
+
+
+
+20 / 4 != 5 || 2 * 5 == 40 / 4 	->
+5 != 5 || 10 == 10
+false || true
+true
+
+
+
+
+
+true | false | false | true	  		-> true
+true || false || false || true 		-> true
+
+
+true || false || true 	-> true
+
+
+NOTE: WE ALWAYS USE || or &&
+
+
+3 > 5 && (______________________________) -> false
+
+
+
+2 * 5 == (20 / 4) * 2 > 10 || true 	-> error
+
+10 == 10 > 10 || true
+
+true > 10 || true
+
+
+
+2 == 2 && (false != true) 	-> true
+
+
+
+
+
+!true 		-> false
+!false 		-> true
+
+
+(true || 5 < 3) && !(5 == 5 && 2 < 0) 	-> true
+
+
+!(((5 * 20 == 50) && !true) || !(5 > 10 || false || !true))
+
+!(false || true)
+
+false
+
+
+
+
+Mock Interview 1
+19th February Sunday, starts at 10:00 AM
+Duration: 20-30 minutes
+Total score: 20 points
+Expected success: 14 points (%70)
+
+Topics:
+Soft-skills-knowledge -> 5 points
+Java knowledge        -> 5 points
+Java white-board 	  -> 10 points
+
+13 questions - 20 minutes
+
+
+Whiteboard question 1 = 4 points
+Whiteboard question 2 = 4 points
+Operators = 2 points
+
+public class Interview{
+	public static void main(String[] args){
+
+		
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

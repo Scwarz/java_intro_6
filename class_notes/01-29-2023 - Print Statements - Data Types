@@ -1,0 +1,180 @@
+
+
+
+01-29-2023 - Print Statements & Data Types
+
+RECAP:
+
+Programming language: set of instructions, rules and syntax that allows creating applications
+
+OTHER LANGUAGES: Source code -> Binary code
+JAVA WAY: source code -> compiling (byte code) JVM -> binaru code
+
+JDK:
+JRE:
+JVM: Where our code runs
+JIT:
+
+main method(): it is the start point of execution that JVM looks for to execute a block of code from top to bottom and left to right
+
+
+block of code: {}
+EXAMPLE:
+{
+    System.out.println("This is TechGlobal");
+    System.out.println("I am learning Java");
+    System.out.println("My name is Tech");
+}
+
+Statement: a line of code
+NOTE: We always write one code statement per line
+NOTE: Each statement MUST end with a semicolon (;)
+
+Source code: 
+It is the code we write using any programming language
+System.out.println("This is TechGlobal");
+
+
+Byte code: It belongs to JAVA only.
+AB1BFSD-12SDSA12-AAVSDFBBN2-
+
+
+Binary code: ones and zeros - machine language
+
+
+
+Compiler error: syntax mistakes that you can observe even on your GUI (Graphical User Interface)
+
+
+Runtime error: Logical mistakes that we do when programming
+
+
+
+
+
+CREATING A PACKAGE AND A CLASS
+-We never use spaces
+-CamelCase rule
+-we should use meaningful names
+
+-package names starts with lowercase
+-class names starts with uppercase
+
+
+
+
+"" 	-> double quotation
+''  -> single quotation
+/   -> forward slash
+\   -> backward slash
+
+
+
+PRINT STATEMENTS
+println() method:
+
+System.out.println("Hello World");
+
+-it prints "Hello World" to the console and moves cursor to the next line
+
+Hello World
+
+
+ESCAPE SEQUENCES
+\n 	-> inserts a line
+\t 	-> insert a tab space
+
+
+
+System.out.println("text");
+
+-Java does not allow you to have double quotations inside the double quotation unless you use escape sequances
+
+
+"I like the \"Friday\" the most"
+
+
+
+
+CONCATENATION
+- means combining 2 or more data together
+"Hello" + "World"  => HelloWorld
+"12" + "35" 	   => 1235
+"ab" + "12" + "xy" => ab12xy
+
+
+
+Operator
++ - * / % = < > <= >= == != 
+
+
+
+
+
+DATA TYPES
+1. Primitive Data Types
+There are 8 primitives: 
+byte, short, int, long, float, double, boolean, char
+
+2. Reference Data Types (non-primitives)
+These data types are also known as object
+There are hundreds of different Reference Types (Object) in Java
+Example: String, Array
+
+
+PRIMITIVE DATA TYPES
+-These are used to store and process simple data
+
+NUMBERS:
+Absolute numbers: 2, 50, 1000, -7
+byte, short, int, long
+
+byte  = 1 byte
+short = 2 bytes
+int   = 4 bytes
+long  = 8 bytes
+
+NOTE: WE ALWAYS USE int
+
+
+
+Floating numbers: 1.5, 56.67, -1205.23, 2.0, 50.0
+float,
+
+
+NOTE: WE ALWAYS double
+
+
+
+CHARACTERS
+Letters, digits, space and specials: 
+'a', '$', '@', '6', ' ', ';'
+
+char
+
+
+BOOLEANS
+true or false
+
+boolean
+
+
+
+
+'a' 	-> char
+75 		-> int
+45.2 	-> double
+true 	-> boolean
+false 	-> boolean
+
+
+
+String fullName = "John Doe";
+
+String email = "johndoe@gmail.com";
+
+String address = "Chicago IL 12345";
+
+
+
+

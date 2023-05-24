@@ -1,0 +1,106 @@
+
+
+
+03-14-2023 - Loops & Character class
+
+Loops: executes a block of code repeatedly
+-eliminates code duplication
+
+1. for loop
+2. while loop
+3. do while loop
+4. for each loop
+
+
+1. for loop
+for(initialization; termination; update){
+	// block to be executed
+}
+
+
+2. while loop
+while(condition){
+	// block to be executed
+}
+
+
+3. do-while loop
+do{
+	// block to be executed
+}
+while(condition);
+
+
+
+
+NESTED LOOPS
+-loop within the loop
+
+for (int i = 1; i <= 3; i++) { // i = 4
+    System.out.println("Outer loop value = " + i);
+            
+    // inner loop
+    for (int j = 1; j <= 5; j++) { // j = 1
+        System.out.println("Inner loop value = " + j);
+    }
+}
+
+
+
+String name = ScannerHelper.getName(); // john, John
+
+if(name.charAt(0) >= 65 && name.charAt(0) <= 90){
+	System.out.println("The name starts with uppercase letter");
+}
+else if (name.charAt(0) >= 97 && name.charAt(0) <= 122){
+	System.out.println("The name starts with lowercase letter");
+}
+else{
+	System.out.println("This name does not start with a letter");
+}
+
+
+//Check if the name starts with uppercase or lower case letter
+
+
+isLetter(), isDigit(), isLetterOrDigit(), isWhitespace(), isUpperCase(), isLowerCase() 
+
+
+if(Character.isUpperCase(c)) {
+    _upper++;
+    _letters++;
+}
+else if(Character.isLowerCase(c)) {
+    _lower++;
+    _letters++;
+}
+else if(Character.isDigit(c)) _digits++;
+else if(Character.isWhitespace(c)) _spaces++;
+else _specials++;
+
+
+if(Character.isLetter(c)){
+	_letters++;
+
+	if(Character.isUpperCase(c)) _upper++;
+	else _lower++;
+}
+else if(Character.isDigit(c)) _digits++;
+else if(Character.isWhitespace(c)) _spaces++;
+else _specials++;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

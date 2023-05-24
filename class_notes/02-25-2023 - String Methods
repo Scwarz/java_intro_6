@@ -1,0 +1,92 @@
+02-25-2023 - String Methods
+
+Method:
+-A block of code that when called exicutes a task
+
+
+accessModifier returnType name(){
+	
+}
+
+public void name(){
+	
+}
+
+public String name(){
+	
+}
+
+public static String name(){
+	
+}
+
+
+1. return or void
+2. if return, what is it returning
+3. static or non static 
+4. does it take arguments
+
+String Methods:
+
+1. valueOf()
+	- converts varibale to String
+	- Static -> usues class name to call
+		ex. String.valueOf('v') -> "v"
+	- return type method that returns a String
+	- takes any variable as an argument
+
+2. concat()
+	- combines 2 strings into 1
+	- non-static method -> uses object name to call
+		ex. String str1 = "abc", str2 = "123";
+			sout(str1.concat(str2));
+	- return type e,thod that returns a String
+
+3. equals()
+	- compares 2 string togather and returns whether it is equal or not. 
+	- "A" - "a" are not equal
+	- return type and returns a boolean
+	ex. "Hello".equals("hello"); -> false
+
+
+4. equalsIgnoreCase()
+	- compares 2 string togather and returns whether it is equal or not. this method is like .equals() but it ignores the case 
+	- "A" - "a" are equal
+	- return type and returns a boolean
+	ex. "Hello".equalsIgnoreCase("hello"); -> true
+
+5. toLowerCase/toUppercase
+	- a method that returns a String will all lowercase/uppercase
+	- returns a String
+	- non-static method
+	ex. "HELLO".toLowerCase(); -> "hello"
+	ex. "hello".toUpperCase(); -> "HELLO"
+
+6. charAt()
+	-takes in a int index and returns and placment of that index
+	-indexes start at 0 and go from there
+	H e l l o w o r l d
+	0 1 2 3 4 5 6 7 8 9
+
+	ex. "Helloworld".charAt(5); -> w
+
+7. indexOf()
+	-takes a String or a Char as an argument and returns the first index of that word or letter
+	- non static
+	- return type and returns int index
+	H e l l o w o r l d --> Helloworld
+	0 1 2 3 4 5 6 7 8 9
+
+	ex. "Helloworld".indexOf(w); -> 5
+
+8. lastIndexOf()
+	- same as indexOf() but retuns the last occurence of the letter or word
+
+9. length()
+	- retuns the length of the string
+	- nonStatic method
+	- return type method that returns int as the length of the word
+
+
+
+

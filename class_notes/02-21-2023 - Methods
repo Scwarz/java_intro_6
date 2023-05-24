@@ -1,0 +1,120 @@
+
+
+
+02-21-2023 - Methods
+
+Method: it is a block of code that runs a task when invoked.
+-Method is also known as function
+-Every method has a task and usually that task is the given as a name as well.
+-method is always shown with ()
+
+
+CREATING CUSTOM METHODS
+-task
+-name
+-return or void
+-static or non-static
+-accessibility level
+
+
+public void printHi(){
+	System.out.println("Hi");
+}
+
+
+
+
+EXAMPLES:
+main() -> special method that tells JVM where the execution point is.
+You cannot execute any program without main method in Java unless you implement a third-party tool
+
+
+2 TYPES OF METHOD
+1. return types: it returns something
+They return a result back which can be stored in a variable.
+	Math.random(), Math.min(), Math.max(), Math.abs(), Math.sqrt()
+	Scanner methods: nextInt(), next(), nextLine()
+	Random methods: nextInt(), nextDouble()
+
+
+2. void types: does not return anything
+These methods are created with keyword <void>
+	System methods: print(), println()
+
+	System.out.println("Hello world");
+
+
+
+
+2 TYPES OF METHODS
+1. static: These are the methods can be invoked (called) with the class name.
+These methods does not require you to create an object.
+
+SYNTAX:
+ClassName.methodName()
+Math.min()
+Math.max()
+Integer.parseInt()
+System.out.print()
+
+
+2. non-static: These methods can only be invoked with objects.
+To be able to call them, we need to create an object of the class first.
+
+Scanner methods
+
+Scanner input = new Scanner(System.in);
+input.nextInt();
+
+Here, input is a Scanner Object variable
+And we invoke nextInt() method with the object
+
+
+Random methods
+Random r = new Random();
+r.nextInt()
+r.nextInt(25)
+
+
+WE CAN CREATE OUR OWN CUSTOM METHODS
+-We can make them either void or return type
+-We can make them either static or non-static
+
+
+void methods can be either static or non-static
+return methods can be either static or non-static
+
+static methods can either be void or return
+non-static methods can either be void or return
+
+
+
+
+enterAnAge(), enterAFirstName(), enterALastName(), enterANumber(), enterAnAddress(), enterAFullname()
+
+
+NOTE: unreachable code
+Any code under the return statement cannot be executed by JVM and will be a compiler error.
+
+
+METHOD ARGUMENTS - PARAMETERS
+-methods can take some arguments and manipulate them inside the block
+
+
+public static int max(int a, int b) {
+    if(a > b) {
+    	return a;
+    }
+    else {
+    	return b;
+    }
+}
+
+Math.max()
+
+
+
+METHOD SIGNATURE = method name + arguments
+accessModifier, other modifiers and return or void is not part of the method signature
+
+

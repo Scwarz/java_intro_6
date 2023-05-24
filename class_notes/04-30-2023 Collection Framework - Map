@@ -1,0 +1,101 @@
+
+
+
+04-30-2023 Collection Framework - Map
+
+How to compare collections?
+What are the differences between ____ and ____?
+	- insertion order (ordered or unoredered)
+	- allowing duplication or not
+	- allowing null elements or not
+	- sorting or not
+	- memory (way of storing elements)
+	- performance
+	- synchronized or not
+	- family-tree (parent classes and interfaces)
+
+
+List: ArrayList, LinkedList, Vector 
+	- keeps insertion order
+	- allows duplicates
+	- allows multiple null elements
+
+
+Set: HashSet, LinkedHashSet, TreeSet
+	- does not keep insertion order
+	- does not allow duplicates (unique elements only)
+	- allows only 1 null element
+
+
+
+
+Map: HashMap, LinkedHashMap, TreeMap, Hashtable
+	-it stores data as key-value pairs
+	-Keys are always unique - one null (Set)
+	-Keys can be considered as identifiers
+	-Values can be duplicate - multiple null values (List)
+	-No insertion order - no methods with indexes
+
+
+LinkedHashMap
+	-it stores data as key-value pairs
+	-Keys are always unique - one null (LinkedHashSet)
+	-Keys can be considered as identifiers
+	-Values can be duplicate - multiple null values (List)
+	-It keeps insertion order - no methods with indexes
+
+
+TreeMap
+	-it stores data as key-value pairs
+	-No insertion order - no methods with indexes
+	-It keeps key-value pairs sorted based on keys
+	-Keys are always unique - NO null key (TreeSet)
+	-Keys can be considered as identifiers
+	-Values can be duplicate - multiple null values (List)
+
+
+NOTE: Hashtable is synchronized (thread-safe) HashMap. 
+Hashtable is slower but safer compared to HashMap when you will use multiple threads.
+Hashtable does not allow any null keys or values. No null et all.
+
+
+
+
+
+
+key 	value 	HashMap
+Sandina 25
+Assem 	27
+Zel 	30
+Hamza 	null
+Anton 	null
+Alina 	null
+
+
+map.get("Zel"); // 30
+
+
+key 	value 	TreeMap
+Assem   27
+Sandina 25
+Zel     20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

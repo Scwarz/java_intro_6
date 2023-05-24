@@ -1,0 +1,110 @@
+
+
+
+03-21-2023 - Arrays Part 3
+
+
+Arrays:
+-Collection of datas - elements
+-Arrays allow duplicates
+-Arrays are fixed sized. You CANNOT add or delete elements, you CANNOT change the size.
+-It allows you to update, search, retrieve, sort elements in an array
+	sorting numbers -> smallest to largest
+	sorting strings -> lexicographically
+-You can iterate arrays with for, for each, while, do-while loop
+-Default values of different data types of arrays
+	-byte, short, int, long -> 0
+	-float, double -> 0.0
+	-boolean -> false
+	-Objects -> null
+
+-To be able to print the elements stored in an array, you will need to Arrays.toString(arrayVariable) method
+
+
+
+
+String methods that returns Arrays
+
+1. toCharArray()
+TASK: it converts the String to char[] array.
+-this method is non-static
+-this method is a return type and it returns an char[] array
+-It does not take any argument
+	
+
+	EXAMPLE:
+
+	String name = "John";
+
+	char[] charsOfName = name.toCharArray(); // ACCEPTABLE
+
+	System.out.println(Arrays.toString(charsOfName)); // [J, o, h, n]
+
+
+
+2. split()
+TASK: it splits the string from the given argument and
+-this is a non-static method
+-return and it returns String[] array
+-it takes an argument
+
+EXAMPLE:
+	String str = "Hello World";
+	str.split(" "); // "Hello", "World"
+
+	String str2 = "Today is a nice class";
+	str2.split(" "); // "Today", "is", "a", "nice", "class"
+
+	String str3 = "John | Doe | 11/11/1999 | johndoe@gmail.com | Chicago";
+	str3.split(" | "); // "John", "Doe"
+
+ 	String str3 = "Hello   World";
+ 	["Hello", "", "", "World"] ->
+
+arr.length - emptyOnes -> 2
+
+
+3, 3, 5, 6, 8, 10
+
+
+if(ENF && Even){
+	print even // 6
+ 	Found
+}
+else if(ONF && Odd){
+	Print odd // 3
+	Found
+}
+if(Found && Found) break;
+
+Even 		Odd
+Found 		Found
+
+
+2-Dimensional Arrays
+-It can be called as array of arrays
+
+String group1 = {"Meerim", "Alina", "Carmela", "Ayat"};
+String group2 = {"Yahya", "Adam", "Louie"};
+String group3 = {"Dima", "Lesia", "Pinar"};
+
+
+int[] numbers1 = {1, 2, 3};
+int[] numbers2 = {10, 7, 9, 15, 23};
+
+
+String[][] students = {
+						{"Meerim", "Alina", "Carmela", "Ayat"},
+						{"Yahya", "Adam", "Louie"},
+						{"Dima", "Lesia", "Pinar"}
+					};
+
+
+students[0];  	// {"Meerim", "Alina", "Carmela", "Ayat"}
+students[1];  	// {"Yahya", "Adam", "Louie"}
+students[2];  	// {"Dima", "Lesia", "Pinar"}
+students[2][2]; // "Pinar"
+students[1][1]; // "Adam"
+students[0][3]; // "Ayat"
+
+
