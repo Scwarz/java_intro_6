@@ -2,6 +2,7 @@ package homeworks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import java.util.Collections;
 
 public class Homework09 {
@@ -131,7 +132,7 @@ public class Homework09 {
 
     ////////////////////////////////TASK06/////////////////////////////
 
-    public static String reveredString(String str){
+    public static String reveredString(String str) {
         String reveredStr = "";
 
         String[] strAsArr = str.trim().split("\\s+");
@@ -142,7 +143,3 @@ public class Homework09 {
         }
 
         return reveredStr.trim();
-
-    }
-
-}

@@ -16,9 +16,11 @@ public class Homework12 {
         System.out.println("\n ===== TASK 5 ===== \n");
         System.out.println(middleInt(-1, 25, 10));
         System.out.println("\n ===== TASK 6 ===== \n");
-        System.out.println(Arrays.toString(new int[] {13, 2, 3}));
+        System.out.println(Arrays.toString(new int[]{13, 2, 3}));
+
         System.out.println("\n ===== TASK 7 ===== \n");
         System.out.println(Arrays.toString(arrFactorial(new int[]{1, 2, 3, 4})));
+
 
     }
 
@@ -28,7 +30,7 @@ public class Homework12 {
         a new String with all digits removed from the original String
      */
 
-    public static String noDigit(String str){
+    public static String noDigit(String str) {
         return str.replaceAll("\\d", ""); //just returning the same string that has been edited by using a regex
     }
 
@@ -39,7 +41,7 @@ public class Homework12 {
         from the original String
      */
 
-    public static String noVowels(String str){
+    public static String noVowels(String str) {
         return str.replaceAll("[aeiou]", ""); //All vowels have been replaced using a regex and it returns the edited string
     }
 
@@ -49,7 +51,7 @@ public class Homework12 {
         it will return an int sum of all digits from the original String.
      */
 
-    public static int sumOfDigits(String str){
+    public static int sumOfDigits(String str) {
         int sum = 0;
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i))) sum += Character.getNumericValue(str.charAt(i));
@@ -63,10 +65,10 @@ public class Homework12 {
         boolean true if there is an uppercase letter and false otherwise.
      */
 
-    public static boolean hasUpperCase(String str){
+    public static boolean hasUpperCase(String str) {
         boolean hasUpperCase = false;
         for (int i = 0; i < str.length(); i++) {
-            if(Character.isUpperCase(str.charAt(i))) hasUpperCase = true;
+            if (Character.isUpperCase(str.charAt(i))) hasUpperCase = true;
             break;
         }
         return hasUpperCase;
@@ -77,7 +79,7 @@ public class Homework12 {
     -This method will take three int arguments and it will return the middle int.
      */
 
-    public static int middleInt(int a, int b, int c){
+    public static int middleInt(int a, int b, int c) {
         if ((a >= b && a <= c) || (a <= b && a >= c)) {
             return a;
         } else if ((b >= a && b <= c) || (b <= a && b >= c)) {
@@ -93,12 +95,13 @@ public class Homework12 {
         and it will return a new array with all 13 replaced with 0.
      */
 
-    public static int[] no13(int[] arr){
+    public static int[] no13(int[] arr) {
+
         int[] no13 = new int[arr.length];
 
-        for (int i = 0; i <= arr.length - 1 ; i++) {
+        for (int i = 0; i <= arr.length - 1; i++) {
 
-            if(arr[i] == 13) no13[i] = 0;
+            if (arr[i] == 13) no13[i] = 0;
             else no13[i] = arr[i];
         }
         return no13;
@@ -111,10 +114,10 @@ public class Homework12 {
         array with every number replaced with their factorials.
      */
 
-    public static int findFactorial(int num){
+    public static int findFactorial(int num) {
 
-        int  factor = 1;
-        for (int i = num; i >= 1  ; i--) {
+        int factor = 1;
+        for (int i = num; i >= 1; i--) {
 
             factor = factor * i;
 
@@ -122,16 +125,16 @@ public class Homework12 {
 
         return factor;
     }
-    public static int[] arrFactorial(int[] arr){
+
+    public static int[] arrFactorial(int[] arr) {
 
         int[] factor = new int[arr.length];
 
-        for (int i = 0; i <= arr.length ; i++) {
+        for (int i = 0; i <= arr.length; i++) {
 
             factor[i] = findFactorial(arr[i]);
         }
         return factor;
     }
-
 
 }
