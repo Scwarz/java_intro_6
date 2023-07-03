@@ -2,7 +2,7 @@ package homeworks;
 
 import java.util.Arrays;
 
-public class Homeworkd06 {
+public class Homework06 {
     public static void main(String[] args) {
 
         System.out.println("/t======TASK 1=====");
