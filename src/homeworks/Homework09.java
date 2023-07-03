@@ -28,48 +28,49 @@ public class Homework09 {
     }
 
     ////////////////////////////////TASK01/////////////////////////////
-    public static int firstDuplicatedNumber(int[] arr){
+    public static int firstDuplicatedNumber(int[] arr) {
         ArrayList<Integer> container = new ArrayList<>();
 
         for (int i : arr) {
-            if(container.contains(i)){
+            if (container.contains(i)) {
                 return i;
-            }else  container.add(i);
+            } else container.add(i);
         }
         return -1;
     }
 
     ////////////////////////////////TASK02/////////////////////////////
-    public static String firstDuplicatedString (String[] arr){
+    public static String firstDuplicatedString(String[] arr) {
         ArrayList<String> container = new ArrayList<>();
 
         for (String s : arr) {
-            if(container.contains(s.toLowerCase())){
+            if (container.contains(s.toLowerCase())) {
                 return s;
-            }else  container.add(s.toLowerCase());
+            } else container.add(s.toLowerCase());
         }
         return "There is no duplicates";
     }
+
     ////////////////////////////////TASK03/////////////////////////////
-    public static ArrayList<Integer> duplicatedStrings(int[] arr){
+    public static ArrayList<Integer> duplicatedStrings(int[] arr) {
         ArrayList<Integer> dupContainer = new ArrayList<>();
 
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if(arr[i] == arr[j] && !dupContainer.contains(arr[i])) dupContainer.add(arr[i]);
+                if (arr[i] == arr[j] && !dupContainer.contains(arr[i])) dupContainer.add(arr[i]);
             }
         }
         return dupContainer;
     }
     ////////////////////////////////TASK04/////////////////////////////
 
-    public static ArrayList<String> duplicatedStrings(String[] arr){
+    public static ArrayList<String> duplicatedStrings(String[] arr) {
         ArrayList<String> dupContainer = new ArrayList<>();
         ArrayList<String> solution = new ArrayList<>();
 
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if(arr[i].equalsIgnoreCase(arr[j]) && !dupContainer.contains(arr[i].toLowerCase())){
+                if (arr[i].equalsIgnoreCase(arr[j]) && !dupContainer.contains(arr[i].toLowerCase())) {
 
                     dupContainer.add(arr[i].toLowerCase());
                     solution.add(arr[i]);
@@ -82,7 +83,7 @@ public class Homework09 {
 
     ////////////////////////////////TASK05/////////////////////////////
 
-    public static void reversedArray(String[] arr){
+    public static void reversedArray(String[] arr) {
         /*
         WAY: 1 -> Max Iteration
         ArrayList<String> reversedList = new ArrayList<>();
@@ -143,3 +144,5 @@ public class Homework09 {
         }
 
         return reveredStr.trim();
+    }
+}
